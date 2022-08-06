@@ -1,0 +1,27 @@
+//import java.util.Scanner;
+class palindrome
+{
+		// Implement your code here 
+	static boolean palindrome(String S)
+	{
+	    int L = S.length();
+	    for (int i=0;i<L;i++)
+	    {
+	        if(S.charAt(i)!= S.charAt(L-i-1))
+	        return false;
+	    }
+	    return true;
+	}
+	public static void main(String[] args)
+	{
+	   // Scanner sc = new Scanner(System.in);
+	    //System.out.println("enter the string :");
+	     String str = "1331";
+	     if(palindrome(str)==true)
+	     System.out.println("is A Palindrome");
+	     else
+	     System.out.println("is not a palindrome");
+	}
+}
+
+
